@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>메인 페이지</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website!</h1>
+
+</header>
+
+<section>
+    <h2>Latest Articles</h2>
+    <a href="/hello">hello</a>
+    <!--[ 이것은 Thymeleaf 한 줄 주석입니다. ]-->
+    <!--/* 이것은 Thymeleaf 주석입니다. */-->
+    <!--/*
+    <ul>
+        <li th:each="article : ${latestArticles}">
+            <a th:href="@{/article/{id}(id=${article.id})}" th:text="${article.title}"></a>
+        </li>
+    </ul>
+    */-->
+</section>
+
+<section>
+    <h2>Featured Products</h2>
+    <!--/*
+   <ul>
+       <li th:each="product : ${featuredProducts}">
+           <span th:text="${product.name}"></span> - <span th:text="${product.price}"></span>
+       </li>
+   </ul>
+   */-->
+</section>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
